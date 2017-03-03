@@ -1,0 +1,22 @@
+<div class="col-md-8 col-md-offset-2 productColor">
+	<div class="col-md-12" align="center" ng-repeat="m in products">
+	<h2>{{m.error}}</h2>
+		<div class="col-md-3">
+			<img ng-src="./app/img/{{m.img}}.jpg" class="col-md-12"/>
+		</div>
+		<div class="col-md-3" style="margin-top: 25px;">
+			<h4>{{m.description}}</h4>
+		</div>
+		<div class="col-md-2" style="margin-top: 25px;"><h4>{{m.price | currency}}</h4></div>
+		<div class="col-md-1">
+			<button class="btn btn-danger" ng-click="removeCar(m)" style="margin-top: 25px;">Remover</button>
+		</div>
+	 </div>
+					
+	<div class="col-md-12" align="center">		
+		<h2 align="right" style="margin-right: 6em">Total: {{total | currency}}</h2>
+		<button class="btn btn-danger" ng-click="buy()" style="margin-top: 3em">Comprar</button>
+		<a class="btn btn-danger" href="#!/home" style="margin-top: 3em">Comprar Mais</a>
+	</div>
+	
+</div>

@@ -1,0 +1,12 @@
+<div class="col-md-8 col-md-offset-2 productColor">
+	<div class="col-md-6">
+		<img ng-src="./app/img/{{m.img}}.jpg" class="col-md-12"/>
+	</div>
+	<div class="col-md-6" align="center" style="margin-top: 3em">
+		<p>{{m.description}}</p>
+		<p>{{m.price | currency}}</p>
+		<button class="btn btn-danger" ng-click="addCar()" style="margin-top: 3em">Inserir no Carrinho</button>
+		<a class="btn btn-danger" href="#!/home" style="margin-top: 3em">Voltar</a>
+	</div>
+	
+</div>

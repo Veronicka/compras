@@ -1,0 +1,17 @@
+<!-- <carousel-dir></carousel-dir> -->
+<div class="col-md-8 col-md-offset-2 homeColor">
+	<h1><p>{{m.hi}} </p></h1>
+	<hr />
+		<h2>{{m.error}}</h2>
+		<div class="col-md-4" ng-repeat="produto in m.list">
+			<div class="form-group groupStyle">
+				<a class="descStyle" href="#!/product/{{produto.nome}}"> 
+					<div class="tam" align="center">
+						<img ng-src="./app/img/{{produto.img}}.jpg" class="img-rounded col-md-12">
+					</div>
+					<p> {{ produto.descricao }} </p>
+					<p> {{ produto.preco | currency }}</p>
+				</a>
+			</div>
+		</div>
+</div>
